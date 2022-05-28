@@ -80,7 +80,4 @@ ruamel.yaml.clib==0.2.6
 scipy==1.8.0
 sqlparse==0.4.1
 urllib3==1.26.4
-virtualenv==20.13.3
-virtualenv-clone==0.5.7
-webencodings==0.5.1
 whitenoise==6.0.0
