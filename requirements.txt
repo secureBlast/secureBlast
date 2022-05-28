@@ -81,14 +81,11 @@ pytz==2021.1
 PyYAML==6.0
 requests==2.25.1
 ruamel.yaml.clib==0.2.6
-s3transfer==0.5.2
-scikit-learn-intelex==2021.20210714.100439
 scipy==1.8.0
 simplegeneric==0.8.1
 sip==4.19.13
 Sphinx==4.2.0
 sqlparse==0.4.1
-TBB==0.2
 terminado==0.9.4
 threadpoolctl==3.1.0
 unicodecsv==0.14.1
@@ -98,8 +95,3 @@ virtualenv==20.13.3
 virtualenv-clone==0.5.7
 webencodings==0.5.1
 whitenoise==6.0.0
-xlwings==0.24.9
-xlwt==1.3.0
-zict==2.0.0
-zope.event==4.5.0
-zope.interface==5.3.0
