@@ -1,0 +1,1 @@
+web: gunicorn SecureBlast.wsgi --log-file -
