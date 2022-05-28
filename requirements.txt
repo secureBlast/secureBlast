@@ -74,7 +74,6 @@ pycurl==7.44.1
 pyinstaller-hooks-contrib==2022.3
 PyJWT==1.7.1
 pyls-spyder==0.4.0
-PyMySQL==1.0.2
 pyodbc===4.0.0-unsupported
 pyparsing==3.0.7
 pytest==6.2.4
