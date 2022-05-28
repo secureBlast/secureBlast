@@ -82,14 +82,7 @@ PyYAML==6.0
 requests==2.25.1
 ruamel.yaml.clib==0.2.6
 scipy==1.8.0
-simplegeneric==0.8.1
-sip==4.19.13
-Sphinx==4.2.0
 sqlparse==0.4.1
-terminado==0.9.4
-threadpoolctl==3.1.0
-unicodecsv==0.14.1
-uritemplate==4.1.1
 urllib3==1.26.4
 virtualenv==20.13.3
 virtualenv-clone==0.5.7
