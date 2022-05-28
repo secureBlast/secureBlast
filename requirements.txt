@@ -82,7 +82,6 @@ PyYAML==6.0
 requests==2.25.1
 ruamel.yaml.clib==0.2.6
 s3transfer==0.5.2
-scikit-image==0.18.3
 scikit-learn-intelex==2021.20210714.100439
 scipy==1.8.0
 simplegeneric==0.8.1
