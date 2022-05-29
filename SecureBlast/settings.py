@@ -95,7 +95,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'secure_blast',
         'USER': 'root',
-        'PASSWORD': '*******',
+        'PASSWORD': '******',
         'HOST': 'localhost',
         'PORT': '3306',
     }

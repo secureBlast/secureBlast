@@ -20,10 +20,9 @@ body {
 .logo{
   z-index: 7;
   position: absolute;
-  top: 3%;
-  left: 35%;
+  top: 22%;
+  left: 36%;
   width: 20%;
-  height: 41%;
 }
 
 .container {
