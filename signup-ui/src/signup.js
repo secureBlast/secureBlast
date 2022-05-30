@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import ReactDOM from "react-dom";
 import "./signup.css";
 import "./signup.scss";
+import logo from "./Images/logoBlack.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // import react icons
 import {faUser, faEnvelope, faLock} from "@fortawesome/free-solid-svg-icons";
 
@@ -150,6 +151,7 @@ function Signup() {
         <div class="bubble"></div>
       </div>
       <div className="container">
+      <img className="logo" src={logo} alt="profile" />
         <div className="screen">
           <div className="screen__content">
             <form

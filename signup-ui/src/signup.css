@@ -49,6 +49,14 @@ body {
 	position: absolute;
 }
 
+.logo{
+	z-index: 7;
+	position: absolute;
+	top: 5%;
+	left: 0%;
+	width: 20%;
+  }
+
 .shape1 {
 	height: 520px;
 	width: 520px;

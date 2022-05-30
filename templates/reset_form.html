@@ -22,6 +22,15 @@
         min-height: 100vh;
       }
 
+      .logo{
+        z-index: 7;
+        position: absolute;
+        top: 5%;
+        left: 0%;
+        width: 20%;
+      }
+      
+
       .screen {
         background: linear-gradient(90deg, #716afa, #6bb7cc);
         position: relative;
@@ -184,6 +193,7 @@
   </head>
   <body>
     <div class="container">
+      <img class="logo" src="/static/images/logoBlack.png" alt="profile" />
       <div class="screen">
         <div class="screen__content">
           <form method="POST" class="reset-pw-form">
