@@ -90,14 +90,27 @@ WSGI_APPLICATION = 'SecureBlast.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'SecureBlast$secure_blast',
+#         'USER': 'SecureBlast',
+#         'PASSWORD': '156tsalb651*',
+#         'HOST': 'SecureBlast.mysql.pythonanywhere-services.com',
+        
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'SecureBlast$secure_blast',
+        'NAME': 'SecureBlast$secure_blast',  # find in database section
         'USER': 'SecureBlast',
         'PASSWORD': '156tsalb651*',
         'HOST': 'SecureBlast.mysql.pythonanywhere-services.com',
-        'PORT': '3306',
+        'OPTIONS': {
+            "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
+        }
     }
 }
 
