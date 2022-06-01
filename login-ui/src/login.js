@@ -181,7 +181,7 @@ function Login() {
               className="login"
               method="POST"
               onSubmit={handleSubmit}
-              action="http://127.0.0.1:8000/accounts/auth"
+              action="http://secureblast.pythonanywhere.com/accounts/auth"
             >
               <div className="login__field">
                 <input
