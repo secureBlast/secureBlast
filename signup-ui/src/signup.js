@@ -66,7 +66,7 @@ function Signup() {
       if (status === 201) {
         alert("User Successfully Registered!");
         form.reset();
-        window.location.replace("http://127.0.0.1:8000/accounts/login");
+        window.location.replace("http://secureblast.pythonanywhere.com/accounts/login");
         // status 400 = the login form user submitted is invalid
       } else if (status === 400) {
         for (const error in createdUser) {
@@ -158,7 +158,7 @@ function Signup() {
               className="signup"
               method="POST"
               onSubmit={handleSubmit}
-              action="http://127.0.0.1:8000/accounts/create"
+              action="http://secureblast.pythonanywhere.com/accounts/create"
             >
               <input type="hidden" name="next" value="/" />
               <div className="signup-div">
@@ -210,7 +210,7 @@ function Signup() {
             </form>
             <div className="back-to-login">
               Already have an account?{" "}
-              <a href="http://127.0.0.1:8000/accounts/login">Log-In</a>
+              <a href="http://secureblast.pythonanywhere.com/accounts/login">Log-In</a>
             </div>
           </div>
           <div className="screen__background">

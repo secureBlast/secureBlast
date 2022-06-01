@@ -28,7 +28,7 @@ def login_view(request, *args, **kwargs):
 # this function render the user logout view
 def logout_view(request, *args, **kwargs):
     logout(request)
-    return redirect("http://127.0.0.1:8000")
+    return redirect("http://secureblast.pythonanywhere.com")
 
 
 # this function render the user password reset view

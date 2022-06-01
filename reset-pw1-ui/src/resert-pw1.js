@@ -26,7 +26,7 @@ function Reset1() {
   // getting backend response on a successful email verification
   const sentMail = () => {
     const url =
-      "http://ec2-18-212-8-28.compute-1.amazonaws.com:8000/accounts/reset_password_sent/";
+      "http://secureblast.pythonanywhere.com/accounts/reset_password_sent/";
     const method = "GET";
     const xhr = new XMLHttpRequest();
     // xhr.responseType = "json";
@@ -142,7 +142,7 @@ function Reset1() {
               className="login"
               method="POST"
               onSubmit={handleSubmit}
-              action="http://127.0.0.1:8000/accounts/reset_password/"
+              action="http://secureblast.pythonanywhere.com/accounts/reset_password/"
             >
               <div className="login__field">
                 <input
@@ -156,7 +156,7 @@ function Reset1() {
               <button className="button-reset" type="submit">
                 Get Link
               </button>
-              <a className="back-login" href="http://127.0.0.1:8000">
+              <a className="back-login" href="http://secureblast.pythonanywhere.com">
                 Back to Log-In
               </a>
             </form>

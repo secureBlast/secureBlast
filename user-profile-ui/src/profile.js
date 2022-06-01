@@ -204,7 +204,7 @@ function Profile() {
     // handling response
     const form = e.target;
     const formData = new FormData(form);
-    const url = "http://127.0.0.1:8000/room/create-message/" + activeRoomCode // req url
+    const url = "http://secureblast.pythonanywhere.com/room/create-message/" + activeRoomCode // req url
     const method = form.getAttribute("method"); // req method
     const xhr = new XMLHttpRequest();
     xhr.responseType = "json"; // data recieving format
@@ -290,7 +290,7 @@ function Profile() {
 
   // this function request and fetching the user profile image
   useEffect(() => {
-    const url = "http://127.0.0.1:8000/profiles/users/data/img";
+    const url = "http://secureblast.pythonanywhere.com/profiles/users/data/img";
     const method = "GET";
     const xhr = new XMLHttpRequest();
     xhr.responseType = "json";
@@ -303,10 +303,10 @@ function Profile() {
     xhr.onload = function () {
       const img = xhr.response;
       if (img.img_path == '""') {
-        setImgPath("http://127.0.0.1:8000/images/profile_default.jpg");
+        setImgPath("http://secureblast.pythonanywhere.com/images/profile_default.jpg");
       } else {
         setImgPath(
-          "http://127.0.0.1:8000/images/" +
+          "http://secureblast.pythonanywhere.com/images/" +
             substringBetween(img.img_path, '"', '"')
         );
       }
@@ -316,7 +316,7 @@ function Profile() {
 
   // this function request and fetching user data from backend
   useEffect(() => {
-    const url = "http://127.0.0.1:8000/profiles/users/data/details";
+    const url = "http://secureblast.pythonanywhere.com/profiles/users/data/details";
     const method = "GET";
     const xhr = new XMLHttpRequest();
     xhr.responseType = "json";
@@ -337,14 +337,14 @@ function Profile() {
   }, []);
 
   const logout = () => {
-    window.location.replace("http://127.0.0.1:8000/accounts/logout");
+    window.location.replace("http://secureblast.pythonanywhere.com/accounts/logout");
   };
 
   const [roomNames, setRoomNames] = useState([]);
   const [roomCodes, serRoomCodes] = useState([]);
   // this function request and fetching the user's chat room list
   useEffect(() => {
-    const url = "http://127.0.0.1:8000/room/rooms";
+    const url = "http://secureblast.pythonanywhere.com/room/rooms";
     const method = "GET";
     const xhr = new XMLHttpRequest();
     xhr.responseType = "json";
@@ -372,7 +372,7 @@ function Profile() {
 
   // this function request and fetching the user's chat room list
   useEffect(() => {
-    const url = "http://127.0.0.1:8000/room/messages";
+    const url = "http://secureblast.pythonanywhere.com/room/messages";
     const method = "GET";
     const xhr = new XMLHttpRequest();
     xhr.responseType = "json";
@@ -422,7 +422,7 @@ function Profile() {
     e.preventDefault();
 
     window.location.replace(
-      "http://127.0.0.1:8000/profiles/users/update/edit"
+      "http://secureblast.pythonanywhere.com/profiles/users/update/edit"
     );
   };
 
@@ -693,7 +693,7 @@ function Profile() {
                       <p className="text-muted">
                         {" "}
                         <a className="pt-1px d-none d-md-block" href="#">
-                          http://127.0.0.1:8000/
+                        http://secureblast.pythonanywhere.com/
                         </a>
                       </p>
                     </div>
@@ -790,7 +790,7 @@ function Profile() {
                         <form
                           method="POST"
                           onSubmit={handleCreateRoom}
-                          action="http://127.0.0.1:8000/room/create-room"
+                          action="http://secureblast.pythonanywhere.com/room/create-room"
                         >
                           <div>
                             <FontAwesomeIcon
@@ -833,7 +833,7 @@ function Profile() {
                         <form
                           method="POST"
                           onSubmit={handleJoinRoom}
-                          action="http://127.0.0.1:8000/room/join-room"
+                          action="http://secureblast.pythonanywhere.com/room/join-room"
                         >
                           <div>
                             <FontAwesomeIcon

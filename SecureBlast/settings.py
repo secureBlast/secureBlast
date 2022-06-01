@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-g=!89fy+mr789o_424vz7%xb$f8(cre7wtk=swz(dx4c)fbgrc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', 'secureblast.pythonanywhere.com']
 
 
 # Application definition
@@ -93,10 +93,10 @@ WSGI_APPLICATION = 'SecureBlast.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'secure_blast',
-        'USER': 'root',
-        'PASSWORD': '******',
-        'HOST': 'localhost',
+        'NAME': 'SecureBlast$secure_blast',
+        'USER': 'SecureBlast',
+        'PASSWORD': '156tsalb651*',
+        'HOST': 'SecureBlast.mysql.pythonanywhere-services.com',
         'PORT': '3306',
     }
 }
@@ -174,11 +174,11 @@ REST_FRAMEWORK = {
 AUTH_USER_MODEL = "authentication_api.NewUser"
 
 # base url of website
-SITE_URL = "http://127.0.0.1:8000"
+SITE_URL = "http://secureblast.pythonanywhere.com"
 
 
 # set login url
-LOGIN_URL = 'http://127.0.0.1:8000/'
+LOGIN_URL = 'http://secureblast.pythonanywhere.com/'
 
 
 # SMTP Configuration

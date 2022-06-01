@@ -61,7 +61,7 @@ function Login() {
         alert("User Successfully Login!");
         form.reset();
         window.location.replace(
-          "http://127.0.0.1:8000/profiles/users/" + createdUser.first_name
+          "http://secureblast.pythonanywhere.com/profiles/users/" + createdUser.first_name
         );
         // status 400 = the login form user submitted is invalid
       } else if (status === 400) {
@@ -204,11 +204,11 @@ function Login() {
               </button>
             </form>
             <div className="forgot-pw">
-              <a href="http://127.0.0.1:8000/accounts/reset">Forgot password</a>
+              <a href="http://secureblast.pythonanywhere.com/accounts/reset">Forgot password</a>
             </div>
             <div className="sign-up">
               Don't have an account?{" "}
-              <a href="http://127.0.0.1:8000/accounts/register">Sign-Up</a>
+              <a href="http://secureblast.pythonanywhere.com/accounts/register">Sign-Up</a>
             </div>
           </div>
           <div className="screen__background">

@@ -29,7 +29,7 @@ def profile_update_view(request, *args, **kwarsg):
             user.save()
             obj.save()
             if first_name:
-                return redirect("http://127.0.0.1:8000/profiles/users/" + user.first_name)
+                return redirect("http://secureblast.pythonanywhere.com/profiles/users/" + user.first_name)
     return render(request, "profile_update_form.html",  {"form": form})
 
 
